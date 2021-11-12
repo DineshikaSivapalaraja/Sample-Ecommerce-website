@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>E-commerce webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <img src="images project/bakko logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images project/cart.png" width="30px" height="30px">
+            <img src="images project/menu icon.png" class="menu-icon" onclick="menutoggle()">   
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Baked Foods!!!<br>With Delicious.....</h1>
+                <a href="" class="btn">Explore Now &#8594;</a>
+
+            </div>
+            <div class="col-2">
+                <img src="images project/backgrounds/bake pro.jpg">
+            </div>
+            </div>
+        </div>
+        </div>
+<!--------------------------------------------------------Featured categories--------------------------------------------------------------->
+        <div class="Categories">
+            <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images project/backgrounds/back cake.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images project/backgrounds/dessert.jpg">
+                </div>
+            </div>
+            </div>
+        </div>
+<!---------------------------------------------------------Featured products------------------------------------------------------------>
+        <div class="small-container">
+            <h1 class="title">Featured Products</h1>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images project/Wedding cakes.jpg" onclick="showAlert('Wedding Cakes')">
+                    <h3>Wedding Cakes</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                     </div>
+                    <p>Rs5000.00 Onwards(2kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/bday cake.jpg" onclick="showAlert('Birthday Cakes')">
+                    <h3>Birthday Cakes</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs4000.00 (1.5kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/anniversary cakes.jpg" onclick="showAlert('Anniversary Cakes')">
+                    <h3>Anniversary Cakes</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs3500.00 Onwards(1.5kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/other occasion cakes.jpg" onclick="showAlert('Occasion Cakes')">
+                    <h3>Occasion Cakes</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs3000.00 Onwards(1.5kg)</p>
+                </div>
+            </div>
+<!----------------------------------------------------------------Cake Items--------------------------------------------------------------->
+            <h1 class="title">Cake Items</h1>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images project/cakes/fluffy sponge butter cake.jpg" onclick="showAlert('Fluffy sponge butter Cake')">
+                    <h3>Fluffy sponge butter Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                     </div>
+                    <p>Rs500.00 (1kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cakes/marble chiffon cake.jpg" onclick="showAlert('Marble Chiffon Cake')">
+                    <h3>Marble Chiffon Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs800.00 (1kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cakes/genoise strawberry cake.jpg" onclick="showAlert('Genoise Strawberry Cake')">
+                    <h3>Genoise Strawberry Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs1650.00 (1kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cakes/devil food layer cake.jpg" onclick="showAlert('Devil Layer Cake')">
+                    <h3>Devil Layer Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs1650.00 (1kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cakes/red velvet cake.png" onclick="showAlert('Red velvet Cake')">
+                    <h3>Red velvet Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                     </div>
+                    <p>Rs2000.00 (1kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cakes/white forest cake.jpg" onclick="showAlert('White Forest Cake')">
+                    <h3>White Forest Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs2000.00 (1kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cakes/black forest cake.jpg" onclick="showAlert('Black Forest Cake')">
+                    <h3>Black Forest Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs2000.00 (1kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cakes/lady baltimore cake.jpg" onclick="showAlert('Lady Baltimore Cake')">
+                    <h3>Lady Baltimore Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs1700.00 (1kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cakes/humming bird cake.jpg" onclick="showAlert('HummingBird Cake')">
+                    <h3>HummingBird Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                     </div>
+                    <p>Rs1700.00 (1kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cakes/angel food cake.jpg" onclick="showAlert('Angel Forest Cake')">
+                    <h3>Angel Forest Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs1650.00 (1kg)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cakes/coffee cake.jpg" onclick="showAlert('Coffee Cake')">
+                    <h3>Coffee Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs1750.00 (1kg)</p>
+                   
+                </div>
+                <div class="col-4">
+                    <img src="images project/cakes/raspberry cheese cake.jpg" onclick="showAlert('Raspberry cheese Cake')" >
+                    <h3>Raspberry cheese Cake</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs250.00 (1 piece)</p>
+                   
+                </div>
+            </div>
+<!-----------------------------------------------------Other Products------------------------------------------------------------------------>
+            <h1 class="title">Other Products</h1>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images project/cookies/Cupcakes .jpg" onclick="showAlert('Cup Cakes')">
+                    <h3>Cup Cakes</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                     </div>
+                    <p>Rs200.00 (1 piece)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cookies/brownies.png" onclick="showAlert('Brownies')">
+                    <h3>Brownies</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs120.00 (1 piece)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cookies/chocalate chip cookies.jpg" onclick="showAlert('Chocolate Chip Cookies')">
+                    <h3>Chocolate Chip Cookies</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs120.00 (1 piece)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cookies/donut.jpg" onclick="showAlert('Donuts')">
+                    <h3>Donuts</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs120.00 (1 piece)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cookies/eclairs.jpg" onclick="showAlert('Eclairs')">
+                    <h3>Eclairs</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                     </div>
+                    <p>Rs160.00 (1 piece)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cookies/french macarons.jpg" onclick="showAlert('French Macarons')">
+                    <h3>French Macarons</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs75.00 (1 piece)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cookies/jelly dessaert.jpg" onclick="showAlert('Jelly desserts')">
+                    <h3>Jelly desserts</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs250.00 (1 cup)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cookies/chocolate biscuit pudding.jpg" onclick="showAlert('Chocalate Biscuit Pudding')">
+                    <h3>Chocalate Biscuit Pudding</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs250.00 (1 cup)</p>
+                </div>
+                <div class="col-4">
+                    <img src="images project/cookies/strawberry pies.jpg" onclick="showAlert('Strawberry Pies')">
+                    <h3>Strawberry Pies</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                     </div>
+                    <p>Rs160.00 (1 cup)</p>
+        </div>
+<!---------------------------------------------------------------------footer----------------------------------------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobiles</p>
+                    <div class="app-logo">
+                        <img src="images project/backgrounds/play.jpg">
+                        <img src="images project/backgrounds/app.jpg">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images project/bakko logo.png">
+                    <p>We always provide delicious Foods For you.<br>If you like to obtain our service Please be with us...</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                        <ul>
+                            <li>YouTube</li>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                        </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2021 - Bakko</p>
+        </div>
+    </div>
+<!------------------------------------------------------js for toggle menu---------------------------------------------------->
+      <script>
+          var MenuItems = document.getElementById("MenuItems");
+          
+          MenuItems.style.maxHeight = "0px";
+          
+          function menutoggle(){
+              if(MenuItems.style.maxHeight == "0px")
+              {
+                  MenuItems.style.maxHeight = "200px";
+              }
+              else{
+                  MenuItems.style.maxHeight = "0px";
+              }
+          }
+      </script>
+      <script src="script.js"></script>
+    </body>
+</html>
+
